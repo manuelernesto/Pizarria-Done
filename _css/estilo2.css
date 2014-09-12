@@ -1,0 +1,361 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+@font-face {
+    font-family: 'FonteMenu';
+    src: url("../_fonts/FingerPaint-Regular.ttf");
+}
+
+body {
+    background-color: #FFCC66;
+    color: rgba(0,0,0,1);
+}
+
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header#cabecalho{
+    background: url("../_imagens/logo.png") no-repeat 0px 10px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 15pt;
+    color: #FFCC66;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-left: 220px;
+    margin-top: 0px;
+}
+
+/*formatacao do menu  */
+nav#menu ul{
+    border-radius: 10px;
+    background-color: #FC9804;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    font-family: 'FonteMenu' sans-serif;
+    display: inline-block;
+    background-color: #FC9804;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 0px 10px 0px 10px;
+}
+nav#menu li:hover{
+    border-radius: 10px 0px 10px 0px;
+    background-color: #FFCC66;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+   color: white;
+}
+/*formatacao do corpo  */
+section#corpo {
+    text-align: justify;
+    display: block;
+    width: 900px ;
+    float: left;
+    padding-right: 20px;
+}
+section#corpo h1 {
+    font-family: 'FonteMenu', sans-serif;
+    font-size: 15pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+section#corpo h2 {
+    font-family: 'FonteMenu', sans-serif;
+    font-size: 13pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+section#corpo img{
+    text-align: justify;
+    float: right;
+    margin-left: 30px;
+    margin-right: 10px;
+    height: 300px;
+    width: 200px;
+}
+
+section#corpo p{
+    display: block;
+}
+/*formatacao da tabela de servicos*/
+table#tabela {
+    border: 1px solid #FFCC66 ;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela td,th{
+    border: 1px solid #FFCC66 ;
+    padding: 10px;
+}
+table#tabela th{
+    color: #ffffff;
+    background-color:#FC9804 ;
+    text-align: center;
+}
+table#tabela td{
+    background-color: #FFC ;
+}
+table#tabela td.cc{
+    text-align: center;
+}
+
+table#tabela caption{
+    font-family: 'FonteMenu', sans-serif;
+    font-size: 15pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+/*formatacao do album de pizzas de produtos */
+ul#album-pizzas{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden ;
+    list-style: none;
+}
+ul#album-pizzas li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-pizzas li:hover span{
+    opacity: 1;
+}
+
+ul#album-pizzas li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #FFCC66;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+
+}
+ul#album-pizzas li#foto01{
+    background: url("../_imagens/tradicional.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto01:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+ul#album-pizzas li:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+ul#album-pizzas li#foto02{
+    background: url("../_imagens/tutto%20italia.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto02:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto03{
+    background: url("../_imagens/89600b149e5e65bbaf7eb66a9cc7b15e.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto03:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto04{
+    background: url("../_imagens/parallax-4.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto04:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto05{
+    background: url("../_imagens/piza2jpg.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto05:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto06{
+    background: url("../_imagens/pizza_frango_skinao_148583.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto06:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto07{
+    background: url("../_imagens/pizza_ipanema5.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto07:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto08{
+    background: url("../_imagens/pizza_margherita_3%5B1%5D.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto08:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+ul#album-pizzas li#foto09{
+    background: url("../_imagens/pizza-doce.jpg") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 400px 400px ;
+    background-color: #ffffff;
+}
+ul#album-pizzas li#foto09:hover{
+    background-position: 0px 0px ;
+    background-size: 200px 200px ;
+}
+
+/*formatacao o formulario de contactos  */
+fieldset#rh{
+    width: 500px;
+    margin: auto;
+}
+.direccao{
+   color:  #FC9804;
+}
+.base{
+    color: #000000;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+}
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+
+}
+input:hover, textarea:hover{
+    background-color: #FFCC66;
+}
+
+
+legend{
+    color: #FC9804;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: 'FonteMenu', sans-serif;
+}
+
+fieldset{
+
+    border-color: #FFCC66;
+    margin: 20px;
+}
+fieldset#usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 10%;
+}
+fieldset#pedido{
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 10%;
+}
+
+
+/*formatacao do rodape  */
+footer#rodape{
+    border-top: 1px solid #FFCC66  ;
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+}
+footer#rodape a {
+
+    text-decoration: none;
+}
+footer#rodape hgroup{
+    text-align: center;
+}
+footer#rodape img:hover{
+    -webkit-transform: scale(1.5);
+    -webkit-transition: .4s ease-in;
+}

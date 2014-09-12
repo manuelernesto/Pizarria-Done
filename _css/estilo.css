@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+    font-family: 'FonteMenu';
+    src: url("../_fonts/FingerPaint-Regular.ttf");
+  }
+body {
+    background-color: #FFCC66;
+    color: rgba(0,0,0,1);
+}
+
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header#cabecalho{
+    background: url("../_imagens/logo.png") no-repeat 0px 10px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 15pt;
+    color: #FFCC66;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-left: 220px;
+    margin-top: 0px;
+}
+
+/*formatacao do menu */
+nav#menu ul{
+    border-radius: 10px;
+    background-color: #FC9804;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    font-family: 'FonteMenu' sans-serif;
+    display: inline-block;
+    background-color: #FC9804;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 0px 10px 0px 10px;
+}
+nav#menu li:hover{
+    border-radius: 10px 0px 10px 0px;
+    background-color: #FFCC66;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+   color: white;
+}
+/*formatacao do corpo */
+section#corpo {
+    display: block;
+    width: 700px ;
+    float: left;
+}
+section#corpo h1 {
+    font-family: 'FonteMenu', sans-serif;
+    font-size: 20pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+
+.centralizar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+/*formatacao da barra lateral */
+aside#lateral{
+    border-left: 1px solid #FFCC66 ;
+    padding-left: 20px;
+    display: block;
+    width: 150px;
+    float: right;
+
+}
+aside#lateral h3{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 15pt;
+    color: #FC9804;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+aside#lateral a {
+    color: black;
+    text-decoration: none;
+}
+aside#lateral a:hover{
+    color: white;
+}
+
+aside#lateral ul{
+    border-radius: 10px;
+    background-color:#FC9804 ;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5) ;
+
+}
+aside#lateral li{
+    font-family: 'FonteMenu' sans-serif;
+    display: inline-block;
+    background-color: #FC9804;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s
+    border-radius: 10px;
+}
+
+MARQUEE{
+    font-family: 'FonteMenu' sans-serif;
+    color: #FC9804;
+}
+aside#lateral li:hover{
+    border-radius: 10px;
+    background-color: #FFCC66;
+}
+/*formatacao do rodape */
+footer#rodape{
+    border-top: 1px solid #FFCC66  ;
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+}
+footer#rodape a {
+
+    text-decoration: none;
+}
+footer#rodape hgroup{
+    text-align: center;
+}
+footer#rodape img:hover{
+    -webkit-transform: scale(1.5);
+    -webkit-transition: .4s ease-in;
+}
